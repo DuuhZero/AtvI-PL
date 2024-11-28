@@ -14,8 +14,8 @@ export default class Cliente {
     private rgs: Array<RG>
     private dataCadastro: Date
     private telefones: Array<Telefone>
-    private produtosConsumidos: Array<Produto>
-    private servicosConsumidos: Array<Servico>
+    public produtosConsumidos: Array<Produto>
+    public servicosConsumidos: Array<Servico>
     private pets: Array<Pet>
     constructor(nome: string, nomeSocial: string, cpf: CPF) {
         this.id= Cliente.idCounter++

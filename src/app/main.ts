@@ -50,7 +50,7 @@ while (execucao) {
 
     switch (opcao) {
         case 1:
-            let cadastro = new CadastroCliente(empresa.getClientes)
+            let cadastro = new CadastroCliente(empresa.getClientes, empresa.getProdutos,empresa.getServicos)
             cadastro.cadastrar()
             break;
         case 2:
